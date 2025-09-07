@@ -247,4 +247,94 @@ section{
 .input, .textinput { width: 100%; padding: 10px; border-radius: 25px; border: none; }
 .textinput { height: 80px; }
 .submit-btn { margin-top: 15px; padding: 12px 25px; border: none; border-radius: 25px; background: #0d98ef; color: white; cursor: pointer; 
+
 justify-items: center; }
+
+@media (max-width: 768px) {
+    nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: rgba(150, 194, 211, 0.9);
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 10px;
+        font-size: 16px;
+    }
+
+    .home h1 {
+        font-size: 40px;
+    }
+
+    .primary-text {
+        font-size: 24px;
+    }
+
+    .about p {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .project h1,
+    .mygallery h1,
+    #contact h2 {
+        font-size: 32px;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr; /* stack items */
+    }
+
+    .project-item {
+        padding: 15px;
+    }
+
+    .project-item h3 {
+        font-size: 18px;
+    }
+
+    .project-item p {
+        font-size: 14px;
+    }
+
+    #i2cbk {
+        width: 100%;
+    }
+
+    .input, .textinput {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .submit-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-text h1 {
+        font-size: 28px;
+    }
+
+    .section-text h2 {
+        font-size: 20px;
+    }
+
+    .primary-text {
+        font-size: 18px;
+    }
+
+    .project-item img {
+        height: 150px;
+    }
+
+    #contact h2 {
+        font-size: 28px;
+    }
+}
